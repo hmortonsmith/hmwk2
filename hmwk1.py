@@ -13,7 +13,7 @@ print(variabledef)
 
 print(type(variabledef))
 
-varexample = 25
+varexample = '25'
 
 print (varexample)
 
