@@ -21,13 +21,14 @@ def othernumber(number):
     if number % 3 != 0 and number % 5 != 0:
         print(number)
 # if the number is NOT divisible by 3 and NOT divisible by 5, then the function prints the number.
-# anything else, and nothing is returned
 
 int = 1
 while int <= 100:
-    fizzbuzz(int)
+
     buzz(int)
     fizz(int)
+    fizzbuzz(int)
     othernumber(int)
     int += 1
+
 #    time.sleep(1)

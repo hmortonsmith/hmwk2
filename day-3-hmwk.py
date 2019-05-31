@@ -15,14 +15,14 @@ print('''Methods are simply another kind of function that reside in classes. \nY
 # 4 pillars of OOP
 
 # Abstraction
-print('''Abstraction is selecting data from a larger pool to show only the relevant details to the object.\n It helps to reduce programming complexity and effort. \n\n''')
+print('''Abstraction is modelling the real world/ a concept that might be complex through attributes and methods \n thus exposing relevant information and actions while hiding the complexity\n\n''')
 
 # Encapsulation
-print('Encapsulation describes the idea of bundling data and methods that work on that data within one unit\n\n')
+print('Encapsulation describes the idea of bundling data and methods that work on that data within one unit.\nIt is the restriction of access of certain methods or information\n\n')
 
 # Inheritance
 print('Inheritance is when a class uses code constructed within another class.\n\n')
 
 # Polymorphism
-print('Polymorphism describes the concept that objects of different types can be accessed through the same interface.')
+print('Polymorphism describes the ability to redefine/overide methods.\nOnly happens after inheritance. Same method, but behaves in different ways.')
 
