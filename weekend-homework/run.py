@@ -27,7 +27,9 @@ flight_list_BA1016.add_passengers(ben)
 flight_list_BA1016.add_passengers(pippa)
 
 flight_list_BA1016.set_pilot(hans)
+print('\n')
 
+print(flight_list_BA1016.aircraft)
 print(flight_list_BA1016.aircraft.manufacturer)
 print(flight_list_BA1016.aircraft.operator)
 print(flight_list_BA1016.aircraft.aircraft_id, '\n')
