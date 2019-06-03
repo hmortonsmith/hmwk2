@@ -21,13 +21,16 @@ flight_list_BA1016.set_aircraft(a380)
 flight_list_BA1016.add_passengers(collin)
 flight_list_BA1016.add_passengers(ben)
 flight_list_BA1016.add_passengers(pippa)
-flight_list_BA1016.set_pilot(hans)
+
 
 flight_list_EJ2514 = FlightList(2514, 'Glasgow')
 flight_list_EJ2514.set_aircraft(aw778)
 flight_list_EJ2514.add_passengers(sara)
 flight_list_EJ2514.add_passengers(jeff)
+print('\n')
+# Add pilots
 flight_list_EJ2514.set_pilot(chuck)
+flight_list_BA1016.set_pilot(hans)
 print('\n')
 
 
@@ -45,8 +48,9 @@ print('BA1016 Passengers:')
 passenger_list = flight_list_BA1016.passenger_list
 for passenger in passenger_list:
     print(passenger.name, 'passport number:', passenger.passport_num)
+print('\n')
 
-#print(aw778.hover)
-#print(collin.greeting)
-
+print(aw778.hover())
+print(aw778.fly())
+print(collin.greeting())
 

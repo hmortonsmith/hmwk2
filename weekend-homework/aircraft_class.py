@@ -33,5 +33,6 @@ class Helicopter(Aircraft):
         self.description = 'helicopter with rotor'
 
     def hover(self):
-        return 'chuck chuck chuck chuck chuck chuck'
+        return ('chuck chuck chuck chuck chuck chuck')
+
 

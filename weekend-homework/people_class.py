@@ -5,8 +5,8 @@ class Person:
         self.name = fullname
         self.nationality = nationality
 
-    # def greeting(self):
-    #     return'Hi, my name is', self.name
+    def greeting(self):
+        return'Hi, my name is', self.name
 
 
 class Passenger(Person):
@@ -22,4 +22,4 @@ class Staff(Person):
 
     def assign_job(self, title):
         self.title = title
-        return
+

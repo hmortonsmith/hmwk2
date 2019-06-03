@@ -16,10 +16,8 @@ class FlightList:
     def set_pilot(self, pilot):
         self.pilot = pilot
 #        return f"{self.name} is your pilot"
-        print(pilot.name, 'assigned as pilot')
+        print(pilot.name, 'assigned as pilot to flight', self.flight_num)
 
     def add_passengers(self, passenger):
         self.passenger_list.append(passenger)
         print(passenger.name, 'has been added to flight', self.flight_num)
- #       return f"{passenger} has been added to the flight"
- #       print(passenger.fullname, ': passenger added')
