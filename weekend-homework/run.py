@@ -5,22 +5,16 @@ from flight_list_class import *
 #  create aircraft
 a380 = Aeroplane(57125, 280, 'Airbus', 'British Airways')
 aw778 = Helicopter(47890, 8, 'Augusta Westland', 'EasyJet')
-# print(a380.fly())
-# print(a380.capacity)
-# print(a380.manufacturer)
 
-# create passengers and pilot
+# create passengers and pilots
 collin = Passenger(55478951, 'Collin Edwards', 'Irish')
-hans = Staff('Pilot','Hans Neils', 'German')
 ben = Passenger(58463248, 'Benjamin Sanders', 'Canadian')
 pippa = Passenger(478996215, 'Pippa Aldrich', 'Australian')
 jeff = Passenger(899774452, 'Jeff Wayne', 'British')
 sara = Passenger(48996652, 'Sara Roster', 'American')
-chuck = Staff('Pilot','Chuck Yeager', 'American')
 
-# print(collin.name)
-# print(collin.passport_num)
-# print(collin.nationality)
+chuck = Staff('Pilot', 'Chuck Yeager', 'American')
+hans = Staff('Pilot', 'Hans Neils', 'German')
 
 flight_list_BA1016 = FlightList(1016, 'JFK')
 flight_list_BA1016.set_aircraft(a380)
@@ -34,21 +28,25 @@ flight_list_EJ2514.set_aircraft(aw778)
 flight_list_EJ2514.add_passengers(sara)
 flight_list_EJ2514.add_passengers(jeff)
 flight_list_EJ2514.set_pilot(chuck)
+print('\n')
 
 
 tuesday_schedule = [flight_list_BA1016, flight_list_EJ2514]
 for flight in tuesday_schedule:
-    print(flight.aircraft.description)
+    print(flight.flight_num, 'from', flight.origin, 'to', flight.destination)
 
-print(flight_list_BA1016.aircraft)
+print('\n')
+print('BA1016')
 print(flight_list_BA1016.aircraft.manufacturer)
 print(flight_list_BA1016.aircraft.operator)
 print(flight_list_BA1016.aircraft.aircraft_id, '\n')
 
+print('BA1016 Passengers:')
 passenger_list = flight_list_BA1016.passenger_list
-
 for passenger in passenger_list:
-    print(passenger.name, 'passport number:',passenger.passport_num)
+    print(passenger.name, 'passport number:', passenger.passport_num)
 
+#print(aw778.hover)
 #print(collin.greeting)
+
 

@@ -4,7 +4,7 @@ class FlightList:
     def __init__(self, flight_num, destination, origin='Heathrow'):
         self.passenger_list = []
         self.pilot = ''
-        self.destination = ''
+        self.destination = destination
         self.origin = origin
         self.aircraft = ''
         self.flight_num = int(flight_num)
