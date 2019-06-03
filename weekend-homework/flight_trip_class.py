@@ -1,17 +1,25 @@
 
-class FlightList:
+class FlightTrip:
 
-    def __init__(self, flight_num, destination, origin='Heathrow'):
+    def __init__(self, flight_num='', destination='', origin=''):
         self.passenger_list = []
         self.pilot = ''
         self.destination = destination
         self.origin = origin
         self.aircraft = ''
-        self.flight_num = int(flight_num)
+        self.flight_num = flight_num
 
     def set_aircraft(self, aircraft):
         self.aircraft = aircraft
         return'Aircraft set'
+
+    def set_destination(self, destination):
+        self.destination = destination
+        print(self.destination, 'set as destination')
+
+    def set_origin(self, origin):
+        self.origin = origin
+        print(self.origin, 'set as origin')
 
     def set_pilot(self, pilot):
         self.pilot = pilot

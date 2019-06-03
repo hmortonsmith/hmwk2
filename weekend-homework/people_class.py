@@ -1,7 +1,7 @@
 
 
 class Person:
-    def __init__(self, fullname='', nationality=''):
+    def __init__(self, fullname, nationality):
         self.name = fullname
         self.nationality = nationality
 
@@ -10,13 +10,13 @@ class Person:
 
 
 class Passenger(Person):
-    def __init__(self, passport_num, fullname='', nationality=''):
+    def __init__(self, passport_num, fullname, nationality):
         super().__init__(fullname, nationality)
-        self.passport_num = int(passport_num)
+        self.passport_num = passport_num
 
 
 class Staff(Person):
-    def __init__(self, title='', fullname='', nationality=''):
+    def __init__(self, title, fullname, nationality):
         super().__init__(fullname, nationality)
         self.title = title
 
