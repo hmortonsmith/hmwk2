@@ -62,7 +62,6 @@ def test_type_passenger():
     test_flight_trip.add_passengers(test_passenger1)
     assert isinstance(test_flight_trip.passenger_list[0], Passenger)
 
-
 def test_add_passenger():
     test_flight_trip2 = FlightTrip()
     test_flight_trip2.add_passengers(test_passenger1)

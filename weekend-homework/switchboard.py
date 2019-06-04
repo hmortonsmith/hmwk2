@@ -7,3 +7,5 @@ initial_response =input('Please press a number:\n'
                         '->  ')
 
 if initial_response == 1:
+    input_1 = input('You pressed 1. Input passenger to the system\n'
+                    'Please enter passenger name')
