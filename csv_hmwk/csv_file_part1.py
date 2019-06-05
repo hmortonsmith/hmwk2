@@ -35,7 +35,7 @@ def transform_imdb_with_filipes_criteria(file_name, type, year, new_transformed_
         print('All done')
 
 
-# transform_imdb_with_filipes_criteria('imdb.csv', 'movie', 2015, 'transformed_imdb_data2.csv')
+#transform_imdb_with_filipes_criteria('imdb.csv', 'movie', 2015, 'transformed_imdb_data1.csv')
 
 
 # PART II
@@ -46,7 +46,7 @@ def transform_imdb_with_my_criteria(file_name, genre, type, year, new_transforme
         with open(file_name, newline='') as csv_file:
             csvreader = csv.reader(csv_file, delimiter=',')
             for row in csvreader:
-                if genre in row[7] and int(row[4]) <= int(year) and row[0] == type:
+                if genre in row[7] and int(row[4]) >= int(year) and row[0] == type:
                     transformed_row = []
                     transformed_row.append(row[0])
                     transformed_row.append(row[1].title())
@@ -71,4 +71,4 @@ def transform_imdb_with_my_criteria(file_name, genre, type, year, new_transforme
         print('All done')
 
 
-transform_imdb_with_my_criteria('imdb.csv', 'Comedy', 'movie', 2017, 'transformed_imdb_data3.csv')
+transform_imdb_with_my_criteria('imdb.csv', 'Comedy', 'movie', 2012, 'transformed_imdb_data2.csv')
