@@ -29,10 +29,11 @@ while True:
 
 print(pass_list)
 for passenger in pass_list:
-    print(passenger)
+    print(passenger.name)
 
 
-passenger_insert = Passenger('M555447996', 'Jean Pierre', 'Mauritian')
-
-passenger_query2 = cursor.execute(f"INSERT INTO [Passengers] ([PassportNumber],[FullName],[Nationality]) VALUES ('{passenger_insert.passport_num}', '{passenger_insert.name}', '{passenger_insert.nationality}')")
-docker_airport_cc.commit()
+# passenger_insert = Passenger('B897465132', 'Sarah Goodall', 'British')
+#
+# passenger_query2 = cursor.execute(f"INSERT INTO [Passengers] ([PassportNumber],[FullName],[Nationality]) VALUES ('{passenger_insert.passport_num}', '{passenger_insert.name}', '{passenger_insert.nationality}')")
+#
+# docker_airport_cc.commit()
